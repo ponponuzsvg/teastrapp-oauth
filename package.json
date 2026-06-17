@@ -1,0 +1,8 @@
+{
+  "name": "teastrapp-oauth",
+  "version": "1.0.0",
+  "main": "api/redirect.js",
+  "scripts": {
+    "start": "node api/redirect.js"
+  }
+}
