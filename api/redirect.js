@@ -12,6 +12,10 @@ app.get('/redirect', (req, res) => {
   return res.redirect(`teastrapp://oauth2callback?access_token=test_${code}`);
 });
 
+app.get('/', (req, res) => {
+  res.send('Teastrapp OAuth server is running!');
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
