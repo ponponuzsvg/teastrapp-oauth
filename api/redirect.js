@@ -1,4 +1,4 @@
-module.exports = (req, res) => {
+export default function handler(req, res) {
   const { code } = req.query;
 
   if (!code) {
@@ -6,4 +6,4 @@ module.exports = (req, res) => {
   }
 
   return res.redirect(`teastrapp://oauth2callback?access_token=test_${code}`);
-};
+}
