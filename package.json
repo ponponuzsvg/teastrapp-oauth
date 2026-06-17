@@ -4,5 +4,8 @@
   "main": "api/redirect.js",
   "scripts": {
     "start": "node api/redirect.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
